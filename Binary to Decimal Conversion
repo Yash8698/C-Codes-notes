@@ -1,0 +1,24 @@
+Binary to Decimal Conversion
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main() {
+    int a;
+    cin>>a;
+    int ans = 0;
+    int i=0;
+    
+    while(a!=0){
+        int b = a%2;
+        ans = (b*pow(10,i))+ans;
+        a=a/2;
+        i++;
+    }
+    
+    cout<<ans;
+}
+
+Remember the logic by thinking about how the code is executing step by step. Take the pen and paper for calculation and try to develop the habit to think critically.
